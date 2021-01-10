@@ -12,6 +12,8 @@ require('dotenv').config();
 //   }
 // });
 
+const port = process.env.PORT || 3000;
+
 app.get('/', (req, res) => {
   const { number, message } = req.query;
   const sns = new AWS.SNS({ apiVersion: '2010-03-31' });
@@ -27,4 +29,4 @@ app.get('/', (req, res) => {
   });
 });
 
-app.listen(3000);
+app.listen(port);
