@@ -1,14 +1,18 @@
 ### Tiny API: SMS-HMU aka Sunday scaries Messaging Service to Hype Mondays Up! 🎉
 
-##### What are you building?
+##### The WHY
 
 I get major [Sunday scaries](https://www.urbandictionary.com/define.php?term=Sunday%20Scaries) 🥺, so I'm building this SMS-HMU API to send myself funny / motivational text messages to hype me up every Monday. Feel free to fork this as starter code for whatever text message app you're building! 😁
 
+##### Technologies used
+
 I built this tiny but mighty SMS (short message service) API on top of [AWS SNS](https://aws.amazon.com/sns/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) (Amazon Simple Notification Service).
+
+##### How do I use the API? 
 
 Pass the API a phone number and message, and that number will receive a text with the message. 📲
 
-Ex: /?message=hello%20world&number=15555555555
+This query: 'http://localhost:3000/?message=hello%20world&number=15555555555'
 would send 'hello world' to +1 (555) 555-5555
 
 #### Tiny Tutorial
